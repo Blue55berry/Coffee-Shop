@@ -1,0 +1,24 @@
+.clr {
+  background-color: #c9a68d;
+}
+.explore {
+  background-color: #603e21;
+}
+.craft {
+  background-color: #faf0e6;
+}
+.font {
+  color: #603e21;
+}
+.self {
+  background-color: #ece0d1;
+}
+.instagram-element:hover {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  border-radius: 40%;
+  cursor: pointer;
+}
+.git:hover{
+    background-color: white;
+    cursor: pointer;
+}
