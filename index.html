@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-    <meta  name="theme-color" content="#c9a68d"/>
+    <meta name="theme-color" content="#c9a68d" />
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link for 3D object-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
 </head>
 
 <body>
+    <!--Header-->
     <section>
         <div class="clr text-white ">
             <div class="container mx-auto">
@@ -49,10 +54,13 @@
                 <div class="flex flex-wrap items-center py-12 px-4">
                     <div class="w-full md:w-1/2 px-4 order-2 md:order-1">
                         <div class="text mt-4 md:mt-none">
-                            <img src="./images/a-photograph-of-a-steaming-cup-of-coffee_6lu-jOciTNaFTLqR--g2DA_sH22uYBNSS-rmYQcZ1grjg.jpeg"
-                                alt="Steaming cup of coffee"
+                            <model-viewer src="models/Latte_Art_Delight_0615140641_texture.glb"
                                 class="w-full h-64 md:h-96 object-cover rounded-lg hover:scale-105 transition-transform duration-500"
-                                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
+                                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" alt="3D model"
+                                auto-rotate camera-controls exposure="1.2" shadow-intensity="1" shadow-softness="0.8"
+                                camera-orbit="0deg 75deg 2.5m" tone-mapping="neutral" disable-zoom="false"
+                                auto-rotate-delay="0" interpolation-decay="200" class="">
+                            </model-viewer>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-4 flex flex-col gap-4 order-1 md:order-2 text-center md:text-left">
@@ -444,6 +452,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <section>
