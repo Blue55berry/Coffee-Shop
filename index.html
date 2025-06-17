@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <!--Mobile default theme-->
     <meta name="theme-color" content="#c9a68d" />
+    <!--Manual Style-->
     <link rel="stylesheet" href="style.css">
+    <!--Browser Icon-->
+    <link rel="icon" href="./images/coffee-cup.png " type="image/svg+xml">
+    <!--Scroll Animation Library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--link for 3D object-->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
+    <!--Font style CDN link-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Edu+SA+Hand:wght@400..700&family=Sacramento&display=swap');
+    </style>
 </head>
 
 <body>
@@ -22,8 +28,8 @@
                 <div class="flex flex-wrap items-center py-15 px-4">
                     <div class="w-full lg:w-1/3 text-center lg:text-left">
                         <div class="brand">
-                            <h1 class="text-2xl lg:text-4xl font-bold tracking-wider">Blue
-                                Berry
+                            <h1 class="text-2xl lg:text-4xl font-bold tracking-wider tracking-wide sacramento-regular1">
+                                11:11 <span class="sacramento-regular1">Cafe</span>
 
                             </h1>
                         </div>
@@ -32,21 +38,21 @@
                         <div class="nav">
                             <ul class="flex flex-wrap justify-center items-center gap-4 font-semibold">
                                 <li class="text-lg hover:scale-105 transition-transform duration-300"><a
-                                        href="#">Home</a></li>
+                                        href="#home">Home</a></li>
                                 <li class="text-lg hover:scale-105 transition-transform duration-300"><a
-                                        href="#">Menu</a></li>
+                                        href="#menu">Menu</a></li>
+                                <li class="text-lg hover:scale-105 transition-transform duration-300"><a href="#about"
+                                        id="About">About</a></li>
                                 <li class="text-lg hover:scale-105 transition-transform duration-300"><a
-                                        href="#">About</a></li>
-                                <li class="text-lg hover:scale-105 transition-transform duration-300"><a
-                                        href="#">Contact</a></li>
+                                        href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="w-full md:w-1/3 flex justify-center md:justify-end">
                         <div class="btn">
                             <button
-                                class="bg-red-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-400 transition-colors duration-300">
-                                Sign-in
+                                class="bg-red-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-400 transition-colors duration-300 cursor-pointer"><a href="#coffee">Coffee</a>
+                                
                             </button>
                         </div>
                     </div>
@@ -64,10 +70,11 @@
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 px-4 flex flex-col gap-4 order-1 md:order-2 text-center md:text-left">
-                        <div class="sample">
+                        <div class="sample sacramento-regular">
                             <h2 class="text-3xl md:text-5xl font-semibold" data-aos="zoom-in-left"
                                 data-aos-easing="linear" data-aos-duration="1300">
-                                A morning without coffee is like <span class="font-bold text-red-400">sleep!</span>
+                                A morning without coffee is like <span
+                                    class="font-bold text-red-800 animate-pulse">Sleep!</span>
                             </h2>
                         </div>
                     </div>
@@ -77,7 +84,7 @@
     </section>
 
     <section>
-        <div class="container mx-auto">
+        <div class="container mx-auto" id="menu">
             <div class="flex flex-wrap justify-center items-center gap-6 mt-15 mb-15 group">
                 <div class="w-full  md:w-1/4 flex justify-center items-center mt-6">
                     <img src="./images/a-photograph-of-a-steaming-cup-of-coffee_6lu-jOciTNaFTLqR--g2DA_sH22uYBNSS-rmYQcZ1grjg.jpeg"
@@ -86,20 +93,17 @@
                         data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 </div>
                 <div class="w-full  md:w-1/4 flex justify-center items-center mt-6">
-                    <img src="./images/a-photograph-of-a-steaming-cup-of-coffee_6lu-jOciTNaFTLqR--g2DA_sH22uYBNSS-rmYQcZ1grjg.jpeg"
-                        alt=""
+                    <img src="./images/4ac9d99f-e83d-4be0-a6d2-0f1551455e65.png" alt=""
                         class="rounded-full h-48 w-48 object-cover group-hover:blur-sm hover:!blur-none group-hover:scale-106 group-hover:duration-500 cursor-pointer"
                         data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 </div>
                 <div class="w-full md:w-1/4 justify-center items-center flex flex-wrap sm:mt-33 md:mt-15">
-                    <img src="./images/a-photograph-of-a-steaming-cup-of-coffee_6lu-jOciTNaFTLqR--g2DA_sH22uYBNSS-rmYQcZ1grjg.jpeg"
-                        alt=""
+                    <img src="./images/281e589e-ca0a-429f-a754-3a1b04e4e029.png" alt=""
                         class="rounded-full h-48 w-48 object-cover group-hover:blur-sm hover:!blur-none group-hover:scale-106 group-hover:duration-500 cursor-pointer"
                         data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 </div>
                 <div class="w-full md:w-1/4 justify-center items-center flex flex-wrap sm:mt-33 md:mt-8">
-                    <img src="./images/a-photograph-of-a-steaming-cup-of-coffee_6lu-jOciTNaFTLqR--g2DA_sH22uYBNSS-rmYQcZ1grjg.jpeg"
-                        alt=""
+                    <img src="./images/f7a32829-e457-4fc9-b561-017060861be7.png" alt=""
                         class="rounded-full h-48 w-48 object-cover group-hover:blur-sm hover:!blur-none group-hover:scale-106 group-hover:duration-500 cursor-pointer"
                         data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 </div>
@@ -260,7 +264,7 @@
     </section>
 
     <section>
-        <div class="craft">
+        <div class="craft" id="coffee">
             <div class="container py-26 px-4 mx-auto">
                 <div class="flex flex-wrap justify-center items-center">
                     <p>our commit</p>
@@ -430,7 +434,7 @@
     </section>
 
     <section>
-        <div class="container mx-auto">
+        <div class="container mx-auto" id="about">
             <div class="flex flex-wrap justify-center items-center py-26 px-13 bg-[#967259] mt-8 rounded-xl">
                 <div class="md:w-1/2 w-full order-2 md:order-1 justify-center items-center flex">
                     <img src="./images/side-view-latte-with-coffee-beans-old-newspaper_926199-2114762.avif" alt=""
@@ -439,7 +443,7 @@
                 <div class="md:w-1/2 px-8 w-full order-1 md:order-2 text-center md:text-left">
                     <p class="font-light">Our Brewing Process</p>
                     <h1 class="text-xl md:text-4xl font-bold">Crafted with <br>Precision and </h1>
-                    <p class="md:mt-2 font-semibold text-sm md:text-sm-none">At the heart of our coffee shop lies a
+                    <p class="md:mt-2 font-semibold text-sm md:text-sm-none sacramento-regular1">At the heart of our coffee shop lies a
                         commitment to quality and
                         attention to detail. Our skilled
                         baristas follow a meticulous brewing process that brings out the best in</p>
@@ -452,20 +456,18 @@
             </div>
         </div>
     </section>
-
-
-
+    
     <!-- Footer -->
-    <section>
+    <section id="Contact">
         <div class="mt-10 bg-[#38220f]">
             <div class="container mx-auto px-13">
-                <div class="flex flex-wrap justify-center items-center py-26 px-5 md:px-10 lg:px-16">
+                <div class="flex flex-wrap justify-center items-center py-24 px-5 md:px-10 lg:px-16">
                     <div class="w-full md:w-1/2 lg:w-1/3">
                         <h1 class="text-xl md:text-4xl font-bold text-white">Socail Media</h1>
-                        <div class="flex gap-4">
+                        <div class="flex gap-4 mt-3 md:mt-0">
                             <p class="md:mt-4 hover:scale-120 hover:duration-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 32 32"
-                                    class="hover:bg-blue-600 rounded-full cursor-pointer">
+                                    class="facebook-element hover:rounded-full ">
                                     <path
                                         d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z">
                                     </path>
@@ -490,13 +492,13 @@
                         </div>
                     </div>
                     <div class="w-full md:w-1/2 lg:w-1/3">
-                        <h1 class="text-xl md:text-4xl font-bold text-white">Address</h1>
-                        <p class="gap-4 font-semibold md:mt-3">Shop No 102, Bashyagaralu Road West, <br>RS Puram</p>
+                        <h1 class="text-xl md:text-4xl font-bold text-white mt-2 md:mt-0">Address</h1>
+                        <p class="gap-4 font-semibold md:mt-3 mt-3">Shop No 102, Bashyagaralu Road West, <br>RS Puram</p>
                     </div>
                     <div class="w-full md:w-1/2 lg:w-1/3">
                         <h1 class="font-bold text-white text-xl md:text-4xl">Contact</h1>
-                        <p class="text-xl font-light md:mt-3">+91 9888456890</p>
-                        <p class="text-xl font-light md:mt-1">+91 9876453266</p>
+                        <p class="text-xl font-semibold md:mt-3 mt-3">+91 9888456890</p>
+                        <p class="text-xl font-semibold md:mt-1">+91 9876453266</p>
                     </div>
                 </div>
             </div>

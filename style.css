@@ -15,10 +15,27 @@
 }
 .instagram-element:hover {
   background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-  border-radius: 40%;
+  border-radius:40%;
   cursor: pointer;
 }
 .git:hover{
     background-color: white;
     cursor: pointer;
+    border-radius: 50%;
+}
+.facebook-element:hover {
+  background: linear-gradient(to right, #3b5998, #8b9dc3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sacramento-regular {
+  font-family: "Bodoni Moda SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.sacramento-regular1 {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-style: normal;
 }
