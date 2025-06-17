@@ -39,3 +39,10 @@
   font-weight: 400;
   font-style: normal;
 }
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-color: #603e21 #c9a68d;
+  scrollbar-width: thin;
+
+}
